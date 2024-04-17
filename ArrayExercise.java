@@ -21,6 +21,6 @@ public class ArrayExercise {
         for (int i = 0; i < numbers.length; i++) {
             sumOfArrays[i] = numbers[i] + moreNumbers[i];
         }
-        System.out.println(Arrays.toString(sumOfArrays));
+        System.out.println("sumOfArrays: " + Arrays.toString(sumOfArrays));
     }
 }
