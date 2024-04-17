@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayExercise {
     public static void main(String[] args) {
@@ -22,5 +23,19 @@ public class ArrayExercise {
             sumOfArrays[i] = numbers[i] + moreNumbers[i];
         }
         System.out.println("sumOfArrays: " + Arrays.toString(sumOfArrays));
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter multiple lines of text (type 'done' to finish):");
+
+        // Use a loop to read multiple lines until the user types 'done'
+        String line;
+        while (!(line = scanner.nextLine()).equals("done")) {
+            System.out.println("You entered: " + line);
+        }
+        scanner.close();
     }
+
+
+
 }
